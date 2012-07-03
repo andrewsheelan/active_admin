@@ -3,7 +3,9 @@
   @include primary-gradient;
   @include shadow;
   @include text-shadow(#000);
-  height: 20px;
+  //height: 20px;
+  height: 100%;
+  text-align: right;
   overflow: visible;
   position: inherit;
   padding: 9px $horizontal-page-margin;
@@ -36,10 +38,12 @@
   a, a:link { color: #cdcdcd; }
 
   .header-item {
-    float: left;
-    top: 2px;
-    position: relative;
-    height: 20px
+      //float: left;
+      float: none;
+      text-align: left;
+      top: 2px;
+      position: relative;
+      height: 20px
   }
 
   ul#tabs {
@@ -124,7 +128,8 @@
 
   #utility_nav { 
     color: #aaa;
-    float: right;
+    //float: right;
+    float: none;
     display: inline-block;
     margin: 0;
     padding: 0;
@@ -132,6 +137,10 @@
 
     a { text-decoration: none; }
     a:hover { color: #fff; }
+  }
+
+  #site_title {
+      padding-bottom: 10px;
   }
 
 }
